@@ -1,4 +1,4 @@
-# MarkItDown TUI — Terminal UI
+# MarkItDown TUI
 
 A modern **terminal application** for [Microsoft MarkItDown](https://github.com/microsoft/markitdown), built in Python with [Textual](https://textual.textualize.io/).  
 Convert Word, PowerPoint, Excel, PDF, HTML and more to Markdown — all from your terminal, with no desktop environment required.
