@@ -1,0 +1,22 @@
+"""
+Palette scura ispirata ad Obsidian, condivisa con markItDownUI.
+I valori esadecimali funzionano sia con CustomTkinter che con Textual.
+"""
+BG_MAIN = "#0B0F14"
+BG_CARD = "#111820"
+BG_INPUT = "#0E141B"
+BG_CONSOLE = "#0A0E13"
+BORDER_CARD = "#1E293B"
+BORDER_CONSOLE = "#1E293B"
+BORDER = "#1E293B"
+
+COLOR_ACCENT = "#3B82F6"
+COLOR_ACCENT_HOVER = "#2F6FD0"
+COLOR_ACCENT_MUTED = "#1E3A5F"
+COLOR_SUCCESS = "#22C55E"
+COLOR_ERROR = "#F87171"
+COLOR_ERROR_HOVER = "#B91C1C"
+COLOR_WARNING = "#FBBF24"
+
+TEXT_PRIMARY = "#E5E7EB"
+TEXT_MUTED = "#6B7280"
