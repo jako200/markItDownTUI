@@ -7,7 +7,7 @@ Convert Word, PowerPoint, Excel, PDF, HTML and more to Markdown — all from you
 >
 > | | Repo | Best for |
 > |---|---|---|
-> | 🖥️ **MarkItDown Studio** (GUI) | [github.com/jako200/markItDownGUI](https://github.com/jako200/markItDownGUI) | Desktop users, Windows / macOS / Linux with GUI |
+> | 🖥️ **MarkItDown GUI** | [github.com/jako200/markItDownGUI](https://github.com/jako200/markItDownGUI) | Desktop users, Windows / macOS / Linux with GUI |
 > | 🖮 **MarkItDown TUI** (this one) | [github.com/jako200/markItDownTUI](https://github.com/jako200/markItDownTUI) | Terminal users, headless servers, SSH sessions |
 >
 > Both share the same conversion engine and support the same file formats.
@@ -26,7 +26,7 @@ Convert Word, PowerPoint, Excel, PDF, HTML and more to Markdown — all from you
 - Queue files via individual paths, full directories, or glob patterns (`~/docs/*.pdf`, `reports/*.docx`)
 - Automatic format validation and duplicate prevention
 - Optional custom output directory (or save alongside each source file)
-- Scrollable file list with per-file live status badges: `in coda` → `in corso` → `OK` / `errore`
+- Scrollable file list with per-file live status badges: `queued` → `converting` → `OK` / `error`
 - Progress bar with file count
 - **Cancel** button to cooperatively interrupt a running batch at any time
 
@@ -140,4 +140,4 @@ python -m unittest discover tests
 ## 🔗 Related Project
 
 Prefer a **graphical desktop application** with file-browser dialogs and a polished GUI?  
-➡️ Check out [**MarkItDown Studio**](https://github.com/jako200/markItDownGUI) — same features, same engine, full CustomTkinter GUI for Windows / macOS / Linux.
+➡️ Check out [**MarkItDown GUI**](https://github.com/jako200/markItDownGUI) — same features, same engine, full CustomTkinter GUI for Windows / macOS / Linux.
