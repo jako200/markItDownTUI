@@ -1,4 +1,6 @@
+import math
 import os
+from typing import Optional
 
 SUPPORTED_EXTENSIONS = {
     ".docx": "Word Document",
@@ -10,10 +12,11 @@ SUPPORTED_EXTENSIONS = {
     ".txt": "Text File",
     ".csv": "CSV Text File",
     ".xml": "XML File",
-    ".json": "JSON File"
+    ".json": "JSON File",
 }
 
-def format_size(size_bytes):
+
+def format_size(size_bytes: Optional[int]) -> str:
     """
     Format bytes to a human readable string.
     """
@@ -22,28 +25,31 @@ def format_size(size_bytes):
     if size_bytes == 0:
         return "0 B"
 
-    size_name = ("B", "KB", "MB", "GB", "TB")
-    import math
+    size_name = ("B", "KB", "MB", "GB", "TB", "PB")
     i = int(math.floor(math.log(size_bytes, 1024)))
+    i = min(max(0, i), len(size_name) - 1)
     p = math.pow(1024, i)
     s = round(size_bytes / p, 2)
     return f"{s} {size_name[i]}"
 
-def get_file_extension(path):
+
+def get_file_extension(path: str) -> str:
     """
     Returns the file extension in lowercase, e.g. '.docx'
     """
     _, ext = os.path.splitext(path)
     return ext.lower()
 
-def is_supported_file(path):
+
+def is_supported_file(path: str) -> bool:
     """
     Returns True if the file extension is supported by MarkItDown.
     """
     ext = get_file_extension(path)
     return ext in SUPPORTED_EXTENSIONS
 
-def get_file_type_description(path):
+
+def get_file_type_description(path: str) -> str:
     """
     Returns a brief description of the file type.
     """
